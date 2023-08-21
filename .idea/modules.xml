@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/JavaSE.iml" filepath="$PROJECT_DIR$/JavaSE.iml" />
+      <module fileurl="file://$PROJECT_DIR$/chapter10_OOP/chapter10_OOP.iml" filepath="$PROJECT_DIR$/chapter10_OOP/chapter10_OOP.iml" />
+      <module fileurl="file://$PROJECT_DIR$/chapter11_Enum/chapter11_Enum.iml" filepath="$PROJECT_DIR$/chapter11_Enum/chapter11_Enum.iml" />
+      <module fileurl="file://$PROJECT_DIR$/chapter12_Exception/chapter12_Exception.iml" filepath="$PROJECT_DIR$/chapter12_Exception/chapter12_Exception.iml" />
+      <module fileurl="file://$PROJECT_DIR$/chapter13_Util/chapter13_Util.iml" filepath="$PROJECT_DIR$/chapter13_Util/chapter13_Util.iml" />
+      <module fileurl="file://$PROJECT_DIR$/chapter14_collection/chapter14_collection.iml" filepath="$PROJECT_DIR$/chapter14_collection/chapter14_collection.iml" />
+      <module fileurl="file://$PROJECT_DIR$/chapter15_generic/chapter15_generic.iml" filepath="$PROJECT_DIR$/chapter15_generic/chapter15_generic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/chapter17_synchronized/chapter17_synchronized.iml" filepath="$PROJECT_DIR$/chapter17_synchronized/chapter17_synchronized.iml" />
+      <module fileurl="file://$PROJECT_DIR$/chapter19_iostream/chapter19_iostream.iml" filepath="$PROJECT_DIR$/chapter19_iostream/chapter19_iostream.iml" />
+      <module fileurl="file://$PROJECT_DIR$/chapter20_network/chapter20_network.iml" filepath="$PROJECT_DIR$/chapter20_network/chapter20_network.iml" />
+      <module fileurl="file://$PROJECT_DIR$/chapter21_qqclient1/chapter21_qqclient1.iml" filepath="$PROJECT_DIR$/chapter21_qqclient1/chapter21_qqclient1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/chapter21_qqserver/chapter21_qqserver.iml" filepath="$PROJECT_DIR$/chapter21_qqserver/chapter21_qqserver.iml" />
+      <module fileurl="file://$PROJECT_DIR$/chapter22_reflection/chapter22_reflection.iml" filepath="$PROJECT_DIR$/chapter22_reflection/chapter22_reflection.iml" />
+      <module fileurl="file://$PROJECT_DIR$/chapter5_conditional&amp;loops/chapter5_conditional&amp;loops.iml" filepath="$PROJECT_DIR$/chapter5_conditional&amp;loops/chapter5_conditional&amp;loops.iml" />
+      <module fileurl="file://$PROJECT_DIR$/chapter6_Array/chapter6_Array.iml" filepath="$PROJECT_DIR$/chapter6_Array/chapter6_Array.iml" />
+      <module fileurl="file://$PROJECT_DIR$/chapter7_OOP/chapter7_OOP.iml" filepath="$PROJECT_DIR$/chapter7_OOP/chapter7_OOP.iml" />
+      <module fileurl="file://$PROJECT_DIR$/chapter8_OOP/chapter8_OOP.iml" filepath="$PROJECT_DIR$/chapter8_OOP/chapter8_OOP.iml" />
+    </modules>
+  </component>
+</project>
