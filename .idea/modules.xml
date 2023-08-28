@@ -15,6 +15,8 @@
       <module fileurl="file://$PROJECT_DIR$/chapter21_qqclient1/chapter21_qqclient1.iml" filepath="$PROJECT_DIR$/chapter21_qqclient1/chapter21_qqclient1.iml" />
       <module fileurl="file://$PROJECT_DIR$/chapter21_qqserver/chapter21_qqserver.iml" filepath="$PROJECT_DIR$/chapter21_qqserver/chapter21_qqserver.iml" />
       <module fileurl="file://$PROJECT_DIR$/chapter22_reflection/chapter22_reflection.iml" filepath="$PROJECT_DIR$/chapter22_reflection/chapter22_reflection.iml" />
+      <module fileurl="file://$PROJECT_DIR$/chapter23_JDBC/chapter23_JDBC.iml" filepath="$PROJECT_DIR$/chapter23_JDBC/chapter23_JDBC.iml" />
+      <module fileurl="file://$PROJECT_DIR$/chapter24_regular/chapter24_regular.iml" filepath="$PROJECT_DIR$/chapter24_regular/chapter24_regular.iml" />
       <module fileurl="file://$PROJECT_DIR$/chapter5_conditional&amp;loops/chapter5_conditional&amp;loops.iml" filepath="$PROJECT_DIR$/chapter5_conditional&amp;loops/chapter5_conditional&amp;loops.iml" />
       <module fileurl="file://$PROJECT_DIR$/chapter6_Array/chapter6_Array.iml" filepath="$PROJECT_DIR$/chapter6_Array/chapter6_Array.iml" />
       <module fileurl="file://$PROJECT_DIR$/chapter7_OOP/chapter7_OOP.iml" filepath="$PROJECT_DIR$/chapter7_OOP/chapter7_OOP.iml" />
