@@ -1,6 +1,6 @@
 package com.tge.houserent;
 
-import java.awt.image.LookupOp;
+
 import java.util.Scanner;
 
 /**

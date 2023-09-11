@@ -19,6 +19,7 @@ public class House {
     private int rent;
     private String status;
 
+
     public House(int id, String host, String tel, String addr, int rent, String status) {
         this.id = id;
         this.host = host;
