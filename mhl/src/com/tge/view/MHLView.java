@@ -1,10 +1,11 @@
 package com.tge.view;
 
-import com.sun.source.tree.NewClassTree;
 import com.tge.domain.DiningTable;
 import com.tge.domain.Employee;
+import com.tge.domain.Menu;
 import com.tge.service.DiningTableService;
 import com.tge.service.EmployeeService;
+import com.tge.service.MenuService;
 import com.tge.utils.Utility;
 
 import java.util.List;
@@ -32,6 +33,8 @@ public class MHLView {
     private EmployeeService employeeService = new EmployeeService();
     // 定义一个DiningTableService属性
     private DiningTableService diningTableService = new DiningTableService();
+    // 定义一个MenuService属性
+    private MenuService menuService = new MenuService();
 
 
     // 显示所有餐桌状态
@@ -42,6 +45,52 @@ public class MHLView {
             System.out.println(diningTable);
         }
         System.out.println("==============显示完毕===============");
+    }
+
+    // 完成订餐
+    public void orderDiningTable(){
+        System.out.println("==============预定餐桌====================");
+        System.out.println("请选择要预定餐桌编号：");
+        int orderId = Utility.readInt();
+        if(orderId == -1) {
+            System.out.println("==============取消预定餐桌====================");
+            return;
+        }
+        char key = Utility.readConfirmSelection();
+        if(key ==  'Y'){
+            DiningTable diningTableById = diningTableService.getDiningTableById(orderId);
+            if (diningTableById == null){
+                System.out.println("====================您预定的餐桌不存在=====================");
+                return;
+            }
+            // 判断餐桌状态是否为空
+            if(!("空".equals(diningTableById.getState()))){
+                System.out.println("====================当前餐桌已预定====================");
+                return;
+            }
+            System.out.println("预定人的名字：");
+            String orderName = Utility.readString(50);
+            System.out.println("预订人电话：");
+            String orderTel = Utility.readString(50);
+            if(diningTableService.orderDiningTable(orderId,orderName,orderTel)){
+                System.out.println("=================预定成功=======================");
+            }else {
+                System.out.println("=================预定失败=======================");
+            }
+        }else {
+            System.out.println("==============取消预定餐桌====================");
+        }
+
+
+    }
+
+    // 显示所有菜品
+    public void listMenu(){
+        List<Menu> menuList = menuService.getMenuList();
+        System.out.println("\n编号\t\t菜名\t\t价格");
+        for (Menu menu : menuList) {
+            System.out.println(menu);
+        }
     }
 
     // 显示主菜单
@@ -79,12 +128,10 @@ public class MHLView {
                                     listDiningTable();
                                     break;
                                 case "2":
-                                    System.out.println("预定餐桌");
-                                    //orderDiningTable();
+                                    orderDiningTable();
                                     break;
                                 case "3":
-                                    System.out.println("显示所有菜品");
-                                    //listMenu();
+                                    listMenu();
                                     break;
                                 case "4":
                                     System.out.println("点餐服务");
