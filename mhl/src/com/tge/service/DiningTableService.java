@@ -49,5 +49,27 @@ public class DiningTableService {
             throw new RuntimeException(e);
         }
     }
+
+    // 点餐后更新餐桌状态
+    public boolean updateDiningTableState(int id, String state){
+        try {
+            int update = diningTableDAO.update("update diningTable set state=? where id=?", state, id);
+
+            return update > 0;
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    // 结账后设置餐桌状态为空
+    public boolean updateDiningTableToFree(int id,String state){
+        try {
+            int update = diningTableDAO.update("update diningTable set state=?,orderName='',oderTel='' where id=?", state, id);
+
+            return update > 0;
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+    }
     
 }

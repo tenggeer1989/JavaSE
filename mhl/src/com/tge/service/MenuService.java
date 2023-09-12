@@ -27,4 +27,13 @@ public class MenuService {
             throw new RuntimeException(e);
         }
     }
+
+    // 根据id，返回menu对象
+    public Menu getMenuById(int id){
+        try {
+            return menuDAO.querySingle("select * from menu where id=?", Menu.class,id);
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+    }
 }

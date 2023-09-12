@@ -1,6 +1,7 @@
 package com.tge.domain;
 
-import java.util.Date;
+import java.sql.Date;
+
 /**
  * ClassName: Bill
  * Package: com.tge.domain
@@ -17,13 +18,13 @@ public class Bill {
     private Integer nums;
     private Double money;
     private Integer diningTableId;
-    private Date billDate;
+    private String billDate;
     private String state;
 
     public Bill() {
     }
 
-    public Bill(Integer id, String billId, Integer menuId, Integer nums, Double money, Integer diningTableId, Date billDate, String state) {
+    public Bill(Integer id, String billId, Integer menuId, Integer nums, Double money, Integer diningTableId, String billDate, String state) {
         this.id = id;
         this.billId = billId;
         this.menuId = menuId;
@@ -82,11 +83,11 @@ public class Bill {
         this.diningTableId = diningTableId;
     }
 
-    public Date getBillDate() {
+    public String  getBillDate() {
         return billDate;
     }
 
-    public void setBillDate(Date billDate) {
+    public void setBillDate(String billDate) {
         this.billDate = billDate;
     }
 
@@ -100,15 +101,13 @@ public class Bill {
 
     @Override
     public String toString() {
-        return "Bill{" +
-                "id=" + id +
-                ", billId='" + billId + '\'' +
-                ", menuId=" + menuId +
-                ", nums=" + nums +
-                ", money=" + money +
-                ", diningTableId=" + diningTableId +
-                ", billDate=" + billDate +
-                ", state='" + state + '\'' +
-                '}';
+        return  id +
+                "\t\t" + menuId +
+                "\t\t\t" + nums +
+                "\t\t\t" + money +
+                "\t" + diningTableId +
+                "\t\t" + billDate +
+                "\t\t" + state ;
+
     }
 }
